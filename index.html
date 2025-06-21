@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search for a location">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="weather-card">
+            <div class="location-info">
+                <div class="city-name" id="city-name">Location</div>
+                <div class="date-time" id="date-time">Date & Time</div>
+            </div>
+            
+            <div class="main-weather">
+                <div class="temperature">
+                    <span id="temp">--</span>°C
+                </div>
+                <div class="weather-details-grid">
+                    <div class="weather-icon" id="weather-icon"></div>
+                    <div class="weather-desc">
+                        <p id="weather-desc">Weather Description</p>
+                        <div class="feels-like">
+                            <i class="fas fa-temperature-half"></i>
+                            <span>Feels like <span id="feels-like-temp">--</span>°C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="additional-info">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-tint"></i>
+                        <div class="info-value"><span id="humidity">--</span>%</div>
+                        <div class="info-label">Humidity</div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-wind"></i>
+                        <div class="info-value"><span id="wind-speed">--</span> km/h</div>
+                        <div class="info-label">Wind</div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-cloud-rain"></i>
+                        <div class="info-value"><span id="precipitation">--</span>%</div>
+                        <div class="info-label">Precipitation</div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-sun"></i>
+                        <div class="info-value"><span id="uv-index">--</span></div>
+                        <div class="info-label">UV Index</div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-eye"></i>
+                        <div class="info-value"><span id="visibility">--</span> km</div>
+                        <div class="info-label">Visibility</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
