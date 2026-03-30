@@ -27,6 +27,9 @@ It allows users to fetch **real-time weather information** for any city worldwid
 
 ---
 
+## Live Link 
+https://avinash201199.github.io/weather-app/
+---
 
 ## ⚙️ Setup Instructions
 
